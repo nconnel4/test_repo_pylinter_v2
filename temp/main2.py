@@ -6,9 +6,9 @@ def sub(a, b) -> int:
     return math.floor(a - b)
 
 
-def word_count(sentence, w) -> int:
+def word_count(sentence, word) -> int:
     sentence = sentence.lower().split()
-    if w in sentence:
-        return sum([1 for x in sentence if x == w])
+    if word in sentence:
+        return sum([1 for x in sentence if x == word])
     else:
         return 0
